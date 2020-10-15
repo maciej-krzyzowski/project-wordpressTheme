@@ -1,0 +1,137 @@
+/* 
+Theme Name: MÓJ MOTYW
+Theme URI: maciejkrzyzowski.pl
+Author: Maciej Krzyżowski
+Author URI: maciejkrzyzowski.pl
+Description: Opis
+Version: 0.1 
+*/
+
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"); */
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.nav {
+    padding-top: 40px;
+}
+
+.nav__container {
+    width: 1200px;
+    padding: 45px 20px;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 600px;
+
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-item a {
+    display: block;
+    margin-top: 2px;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+
+.wp-custom-header img {
+    display: block;
+    margin: 0 auto 91px;
+}
+
+.container h2:first-of-type {
+    font-size: 17px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+.footer a {
+    margin-top: 3px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.footer__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer__social-media--fallow {
+    margin-right: 15px;
+}
+
+.menu-menu-stopka-container ul {
+    justify-content: flex-start;
+}
+
+.menu-social-media-container ul {
+    justify-content: flex-end;
+    width: auto;
+}
