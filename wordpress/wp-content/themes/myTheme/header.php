@@ -17,7 +17,7 @@
             <?php wp_nav_menu(['theme_location' => 'main-menu', 'fallback_cb' => false]) ?>
         </div>
     </nav>
-    <?php if(get_queried_object_id() !== 118 & get_queried_object_id() !== 116) : ?>
+    <?php if(get_queried_object_id() !== 24 & get_queried_object_id() !== 22) : ?>
         <?php the_custom_header_markup(); ?>
     <?php endif; ?>
 
