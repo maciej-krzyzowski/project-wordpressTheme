@@ -34,6 +34,13 @@ a {
     text-transform: uppercase;
 }
 
+P {
+    margin-top: 26px;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
 .container {
     max-width: 1100px;
     padding: 0 80px;
@@ -95,10 +102,21 @@ a {
     color: #B4AD9E;
 }
 
+.container h2:first-of-type {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #B4AD9E;
+}
+
 .about-me {
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 100px;
 }
 
 .about-me img {
@@ -107,8 +125,48 @@ a {
     object-fit: scale-down;
 }
 
+.posts__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    columns: 50%;
+    margin: 100px 0 50px;
+}
+
+.post {
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+.post img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post li {
+    list-style-type: none;
+}
+
+.post__subtitle {
+    margin: 21px 0 13px!important;
+}
+
+.post__subtitle a {
+    color: #B4AD9E;
+    font-weight: 400;
+}
+
+.post__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
 .newsletter {
-    margin: 100px 0;
+    margin: 0 0 100px;
     padding: 65px 0;
     width: 100vw;
     height: 287px;
@@ -151,51 +209,7 @@ a {
 }
 
 .last-posts {
-    margin-bottom: 100px;
-}
-
-.posts__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.post {
-    width: 45%;
-}
-
-.post img {
-    height: 280px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.post li {
-    list-style-type: none;
-}
-
-.post__subtitle {
-    margin: 21px 0 13px!important;
-}
-
-.post__subtitle a {
-    color: #B4AD9E;
-    font-weight: 400;
-}
-
-.post__title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 30px;
-}
-
-.post p {
-    margin-top: 26px;
-    font-size: 15px;
-    line-height: 24px;
-    font-family: 'Playfair Display', serif;
-
+    margin-bottom: 50px;
 }
 
 .footer {
@@ -230,11 +244,11 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .footer__social-media--fallow {
-    margin-right: 15px;
+    margin: 0 15px 0 0;
 }
 
 .menu-menu-stopka-container ul {
