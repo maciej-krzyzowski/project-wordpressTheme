@@ -1,21 +1,19 @@
 <?php
 
-    if (!function_exists('theme_setup')):
-        function theme_setup(){
+    function theme_setup(){
 
-            register_nav_menus([
-                'main-menu' => 'Menu główne',
-                'footer-menu' => 'Menu stopka',
-                'social-media' => 'Menu social media',
-            ]);
+        register_nav_menus([
+            'main-menu' => 'Menu główne',
+            'footer-menu' => 'Menu stopka',
+            'social-media' => 'Menu social media',
+        ]);
 
-            add_theme_support( 'custom-header', array(
-                'height' => 521,
-                'width' => 1100,
-            ));
+        add_theme_support( 'custom-header', array(
+            'height' => 521,
+            'width' => 1100,
+        ));
 
-        }
-    endif;
+    }
     add_action('after_setup_theme', 'theme_setup');
 
     function latest_post() {
@@ -39,13 +37,11 @@
             <?php endwhile;
         endif;
     }
-
     add_shortcode('lastest-post', 'latest_post');
 
     function my_excerpt_length($length) {
         return 28;
     }
-
     add_filter('excerpt_length', 'my_excerpt_length');
 
     function wplab_new_excerpt_more( $more ) {
@@ -71,5 +67,10 @@
         wp_enqueue_style( 'google-font-playfair', 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap', false ); 
     }
     add_action( 'wp_enqueue_scripts', 'add_font_playfair' );
+
+    function add_javascript() {
+        wp_enqueue_script('script', get_stylesheet_directory_uri().'/script.js');
+    }
+    add_action('wp_footer', 'add_javascript');
 
 ?>

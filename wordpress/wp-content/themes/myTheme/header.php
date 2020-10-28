@@ -17,7 +17,12 @@
             <?php wp_nav_menu(['theme_location' => 'main-menu', 'fallback_cb' => false]) ?>
         </div>
     </nav>
-    <?php if(get_queried_object_id() !== 24 & get_queried_object_id() !== 22) : ?>
+    <button class="hamburger hamburger--minus" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <?php if(get_queried_object_id() !== 24 & get_queried_object_id() !== 22 & !is_404()) : ?>
         <?php the_custom_header_markup(); ?>
     <?php endif; ?>
 
