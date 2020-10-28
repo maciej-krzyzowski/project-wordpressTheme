@@ -43,6 +43,10 @@ P {
     font-family: 'Playfair Display', serif;
 }
 
+img {
+    object-fit: cover;
+}
+
 .container {
     max-width: 1100px;
     padding: 0 80px;
@@ -237,7 +241,6 @@ P {
 .post img {
     height: 280px;
     width: 100%;
-    object-fit: cover;
 }
 
 .post li {
@@ -420,7 +423,6 @@ P {
     .wp-custom-header img {
         width: 95%;
         height: auto;
-        object-fit: cover;
     }
 
     .nav__container {
